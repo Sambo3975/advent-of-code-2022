@@ -51,6 +51,7 @@ def main():
                 res = top_3_calories('test.txt')
                 print(f'Sum of calories in top 3: {res}')
             case 'q':
+                print()
                 break
             case _:
                 print("Invalid selection")
