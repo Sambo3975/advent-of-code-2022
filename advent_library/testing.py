@@ -19,7 +19,10 @@ def test_bed(function, inputs, expected_outputs, tracer=None):
         in_ = inputs[i]
         in_str = repr(in_)
         exp = expected_outputs[i]
-        out = function(in_)
+        if isinstance(in_, tuple):
+            out = function(*in_)
+        else:
+            out = function(in_)
         if out == exp:
             print(f'\n{Fore.GREEN}Passed test {i+1}:{Style.RESET_ALL}'
                   f'\n-------------------------------'
