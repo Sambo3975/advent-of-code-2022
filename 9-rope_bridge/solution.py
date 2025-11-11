@@ -86,7 +86,7 @@ def main():
     print('Day 9 - Rope Bridge')
     selector = OptionSelector()
     selector.add_option('1', 'part 1', part_1)
-    selector.add_option('2', 'part 2', part_2)
+    selector.add_option('24', 'part 2', part_2)
     selector.add_option('ts', 'test simulate_short_rope()', test_simulate_short_rope)
     selector.add_option('tr', 'test simulate_rope', test_simulate_rope)
     selector.run()
